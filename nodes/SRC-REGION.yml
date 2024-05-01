@@ -1,0 +1,63 @@
+steps:
+  REGION-446d3630-3f8b-42b6-9628-29d4be626293:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: Region data as defined by TPC-H
+      locationName: SRC
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d30afc10-410b-452a-ba16-3ab9d440c03f
+              stepCounter: 446d3630-3f8b-42b6-9628-29d4be626293
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: R_REGIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f31cfcc1-37a6-4a18-a425-5bc68d0aa2f1
+              stepCounter: 446d3630-3f8b-42b6-9628-29d4be626293
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: R_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 72c81d35-5aa8-445a-9eff-e1ff6bafa2f2
+              stepCounter: 446d3630-3f8b-42b6-9628-29d4be626293
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: R_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SRC', 'REGION') }}
+      name: REGION
+      schema: ""
+      sqlType: Source
+      table: REGION
+      type: sourceInput
+    stepCounter: 446d3630-3f8b-42b6-9628-29d4be626293
